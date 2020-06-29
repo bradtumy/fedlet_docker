@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityConfig xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:sun:fm:SAML:2.0:entityconfig" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns5="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:x509qry="urn:oasis:names:tc:SAML:metadata:X509:query" xmlns:query="urn:oasis:names:tc:SAML:metadata:ext:query" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" entityID="http://my-namespace.iam.example.com:80/am" hosted="0">
+    <IDPSSOConfig metaAlias="/advisors/idp">
+        <Attribute name="description">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="signingCertAlias">
+            <Value>test</Value>
+        </Attribute>
+        <Attribute name="encryptionCertAlias">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="basicAuthOn">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="basicAuthUser">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="basicAuthPassword">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="autofedEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="autofedAttribute">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="assertionEffectiveTime">
+            <Value>600</Value>
+        </Attribute>
+        <Attribute name="idpAuthncontextMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPAuthnContextMapper</Value>
+        </Attribute>
+        <Attribute name="idpAuthncontextClassrefMapping">
+            <Value>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|0||default</Value>
+        </Attribute>
+        <Attribute name="idpAccountMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPAccountMapper</Value>
+        </Attribute>
+        <Attribute name="idpDisableNameIDPersistence">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="idpAttributeMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPAttributeMapper</Value>
+        </Attribute>
+        <Attribute name="assertionIDRequestMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultAssertionIDRequestMapper</Value>
+        </Attribute>
+        <Attribute name="nameIDFormatMap">
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress=mail</Value>
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName=</Value>
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName=</Value>
+            <Value>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos=</Value>
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified=</Value>
+        </Attribute>
+        <Attribute name="idpECPSessionMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPECPSessionMapper</Value>
+        </Attribute>
+        <Attribute name="attributeMap"/>
+        <Attribute name="wantNameIDEncrypted">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantArtifactResolveSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantLogoutRequestSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantLogoutResponseSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantMNIRequestSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantMNIResponseSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="cotlist">
+            <Value>advisors-cot</Value>
+        </Attribute>
+        <Attribute name="discoveryBootstrappingEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="assertionCacheEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="assertionNotBeforeTimeSkew">
+            <Value>600</Value>
+        </Attribute>
+        <Attribute name="saeAppSecretList"/>
+        <Attribute name="saeIDPUrl">
+            <Value>http://my-namespace.iam.example.com:80/am/idpsaehandler/metaAlias/advisors/idp</Value>
+        </Attribute>
+        <Attribute name="AuthUrl">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="appLogoutUrl">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="idpSessionSyncEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="relayStateUrlList"/>
+    </IDPSSOConfig>
+    <SPSSOConfig metaAlias="/advisors/sp">
+        <Attribute name="wantLogoutResponseSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantAttributeEncrypted">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="spAuthncontextMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultSPAuthnContextMapper</Value>
+        </Attribute>
+        <Attribute name="alwaysIdpProxy"/>
+        <Attribute name="autofedAttribute"/>
+        <Attribute name="spSessionSyncEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="spAuthncontextComparisonType">
+            <Value>exact</Value>
+        </Attribute>
+        <Attribute name="idpProxyList">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="spDoNotWriteFederationInfo"/>
+        <Attribute name="wantPOSTResponseSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="localAuthURL"/>
+        <Attribute name="wantMNIRequestSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="spAdapterEnv"/>
+        <Attribute name="basicAuthPassword">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="transientUser"/>
+        <Attribute name="cotlist">
+            <Value>advisors-cot</Value>
+        </Attribute>
+        <Attribute name="spAttributeMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultSPAttributeMapper</Value>
+        </Attribute>
+        <Attribute name="saeSPUrl">
+            <Value>http://my-namespace.iam.example.com:80/am/spsaehandler/metaAlias/advisors/sp</Value>
+        </Attribute>
+        <Attribute name="responseArtifactMessageEncoding">
+            <Value>URI</Value>
+        </Attribute>
+        <Attribute name="useNameIDAsSPUserID">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="wantAssertionEncrypted">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="saml2AuthModuleName">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="signingCertAlias">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="relayStateUrlList"/>
+        <Attribute name="appLogoutUrl"/>
+        <Attribute name="useIntroductionForIDPProxy">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="ECPRequestIDPListGetComplete">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="attributeMap">
+            <Value>cn=cn</Value>
+            <Value>sn=sn</Value>
+        </Attribute>
+        <Attribute name="spAuthncontextClassrefMapping">
+            <Value>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|0|default</Value>
+        </Attribute>
+        <Attribute name="wantMNIResponseSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="wantLogoutRequestSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="metaAlias"/>
+        <Attribute name="ECPRequestIDPListFinderImpl">
+            <Value>com.sun.identity.saml2.plugins.ECPIDPFinder</Value>
+        </Attribute>
+        <Attribute name="spAccountMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultSPAccountMapper</Value>
+        </Attribute>
+        <Attribute name="includeRequestedAuthnContext">
+            <Value>true</Value>
+        </Attribute>
+        <Attribute name="spAdapter"/>
+        <Attribute name="ECPRequestIDPList">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="saeAppSecretList"/>
+        <Attribute name="idpProxyCount">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="wantArtifactResponseSigned">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="basicAuthOn">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="wantNameIDEncrypted">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="basicAuthUser">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="saeSPLogoutUrl"/>
+        <Attribute name="intermediateUrl"/>
+        <Attribute name="useIDPFinder"/>
+        <Attribute name="encryptionCertAlias">
+            <Value></Value>
+        </Attribute>
+        <Attribute name="defaultRelayState"/>
+        <Attribute name="assertionTimeSkew">
+            <Value>300</Value>
+        </Attribute>
+        <Attribute name="autofedEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="enableIDPProxy">
+            <Value>false</Value>
+        </Attribute>
+    </SPSSOConfig>
+</EntityConfig>

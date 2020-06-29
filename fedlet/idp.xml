@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityDescriptor entityID="http://my-namespace.iam.example.com:80/am" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:query="urn:oasis:names:tc:SAML:metadata:ext:query" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:x509qry="urn:oasis:names:tc:SAML:metadata:X509:query" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                
+                
+                
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDRzCCAi+gAwIBAgIEFgXQjzANBgkqhkiG9w0BAQsFADBUMQswCQYDVQQGEwJVSzEQMA4GA1UE
+CBMHQnJpc3RvbDEQMA4GA1UEBxMHQnJpc3RvbDESMBAGA1UEChMJRm9yZ2VSb2NrMQ0wCwYDVQQD
+EwR0ZXN0MB4XDTIwMDYyNDEyMzYxOFoXDTMwMDYyMjEyMzYxOFowVDELMAkGA1UEBhMCVUsxEDAO
+BgNVBAgTB0JyaXN0b2wxEDAOBgNVBAcTB0JyaXN0b2wxEjAQBgNVBAoTCUZvcmdlUm9jazENMAsG
+A1UEAxMEdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALCq9ZVzfxIORdF3ZVDL
+p2j+Vk64ZrScvj/qoF64xqN3g/W0OEzAAedBG/0ZI/jqBJR/vhWklREReqbgBASj+tTo6O4vMyH7
+ndtmjHWahAlfflCdUOHeIO+d5xJMmZb45fqUt74pwK9wIPkXZYs9YfXrh2NJ8OscpEC54bgm8E+B
+UttbRHTybp25r8F+lN/k8JjSABVw/z8IBJUCKZ/D5QodN2ETGJP55YWqZ+Kn/UyOsA4s79Cu6PGR
+Pw1nq1RyHHIGTq5qDZQ3tfs/KERdrexbQAZZfs3NuvXH0B2NjdLeiEkHfcvzvRM8CIb0WH+jR6ho
+aZqbf0t6wLX4A8h/rb8CAwEAAaMhMB8wHQYDVR0OBBYEFHWt/aVMA8PiZWV9a4YNCkLWYMReMA0G
+CSqGSIb3DQEBCwUAA4IBAQCh6kY5raNUsydrC5ffi+1b5njaSDhv5Cij9YwCaAsD0YN/mxVC7qcw
+wGWx8eVFVlhMhTDQ8F7deLAKWMUfgTS/gX20is8j3THpiko3v/EQ9cnfL+LoqS3aRfhrXYslyMXE
+lxt/gNgBULyhAGseP72gnFyn5ydVRft99CvFGJRttnDzKYjJNRS2KsMPW/Ur2Pl2+J7FT1Q2kcoQ
+7uKjtz9s1GQeLQMYxRVF81DQDb5JHw5o1BCeeB67PkoH7z3HWF8RIfgk2im3lF7oHXZdON3+zDsn
+PDRLwXeiUgeX1GwrPWQdpGrwJdHf3wK3frvE59kNuJDBakd21WMtUPQgj6fD
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <ArtifactResolutionService index="0" isDefault="true" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/ArtifactResolver/metaAlias/advisors/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://my-namespace.iam.example.com:80/am/IDPSloRedirect/metaAlias/advisors/idp" ResponseLocation="http://my-namespace.iam.example.com:80/am/IDPSloRedirect/metaAlias/advisors/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://my-namespace.iam.example.com:80/am/IDPSloPOST/metaAlias/advisors/idp" ResponseLocation="http://my-namespace.iam.example.com:80/am/IDPSloPOST/metaAlias/advisors/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/IDPSloSoap/metaAlias/advisors/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://my-namespace.iam.example.com:80/am/IDPMniRedirect/metaAlias/advisors/idp" ResponseLocation="http://my-namespace.iam.example.com:80/am/IDPMniRedirect/metaAlias/advisors/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://my-namespace.iam.example.com:80/am/IDPMniPOST/metaAlias/advisors/idp" ResponseLocation="http://my-namespace.iam.example.com:80/am/IDPMniPOST/metaAlias/advisors/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/IDPMniSoap/metaAlias/advisors/idp"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://my-namespace.iam.example.com:80/am/SSORedirect/metaAlias/advisors/idp"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://my-namespace.iam.example.com:80/am/SSOPOST/metaAlias/advisors/idp"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/SSOSoap/metaAlias/advisors/idp"/>
+        <NameIDMappingService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/NIMSoap/metaAlias/advisors/idp"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/AIDReqSoap/IDPRole/metaAlias/advisors/idp"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:URI" Location="http://my-namespace.iam.example.com:80/am/AIDReqUri/IDPRole/metaAlias/advisors/idp"/>
+    </IDPSSODescriptor>
+    <SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://my-namespace.iam.example.com:80/am/SPSloRedirect/metaAlias/advisors/sp" ResponseLocation="http://my-namespace.iam.example.com:80/am/SPSloRedirect/metaAlias/advisors/sp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://my-namespace.iam.example.com:80/am/SPSloPOST/metaAlias/advisors/sp" ResponseLocation="http://my-namespace.iam.example.com:80/am/SPSloPOST/metaAlias/advisors/sp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/SPSloSoap/metaAlias/advisors/sp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://my-namespace.iam.example.com:80/am/SPMniRedirect/metaAlias/advisors/sp" ResponseLocation="http://my-namespace.iam.example.com:80/am/SPMniRedirect/metaAlias/advisors/sp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://my-namespace.iam.example.com:80/am/SPMniPOST/metaAlias/advisors/sp" ResponseLocation="http://my-namespace.iam.example.com:80/am/SPMniPOST/metaAlias/advisors/sp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://my-namespace.iam.example.com:80/am/SPMniSoap/metaAlias/advisors/sp" ResponseLocation="http://my-namespace.iam.example.com:80/am/SPMniSoap/metaAlias/advisors/sp"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</NameIDFormat>
+        <AssertionConsumerService index="0" isDefault="true" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://my-namespace.iam.example.com:80/am/Consumer/metaAlias/advisors/sp"/>
+        <AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://my-namespace.iam.example.com:80/am/Consumer/metaAlias/advisors/sp"/>
+        <AssertionConsumerService index="2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="http://my-namespace.iam.example.com:80/am/Consumer/ECP/metaAlias/advisors/sp"/>
+    </SPSSODescriptor>
+</EntityDescriptor>

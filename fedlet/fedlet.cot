@@ -1,0 +1,6 @@
+#Sun Jun 28 14:23:50 GMT 2020
+sun-fm-saml2-writerservice-url=
+sun-fm-cot-status=Active
+cot-name=advisors-cot
+sun-fm-trusted-providers=http\://my-namespace.iam.example.com\:80/am,sp
+sun-fm-saml2-readerservice-url=
